@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder =new AlertDialog.Builder(MainActivity.this);
         builder.setTitle("Crear Tarea");
         builder.setCancelable(false);
-        View todoAlert = LayoutInflater.from(this).inflate(R.layout.todo_view_model,null);
+        View todoAlert = LayoutInflater.from(this).inflate(R.layout.todo_model_alert,null);
         EditText txtTitulo= todoAlert.findViewById(R.id.txtTituloToDoModelAlert);
         EditText txtContenido= todoAlert.findViewById(R.id.txtContenidoToDoModelAlert);
         builder.setView(todoAlert);
